@@ -3,10 +3,10 @@ import random
 
 def guess(x):
 
-    randum_number = random.randint(1,x)
-    guess = 0
+    randum_number = random.randint(0,x)
+    guess = x + 1
     while guess != randum_number:
-        guess = int(input(f"Enter a guess nnumber between 1 and {x}:- "))
+        guess = int(input(f"Enter a guess number between 1 and {x}:- "))
         if guess < randum_number:
             print("Sorry guess again,too low number.")
         elif guess > randum_number:
@@ -14,4 +14,5 @@ def guess(x):
 
     print("Good, you sucess to guess the number.")
 
-guess(10)
+x = input("Enter the highest range number:- ")
+guess(x)
