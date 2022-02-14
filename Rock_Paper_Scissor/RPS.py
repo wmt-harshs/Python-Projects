@@ -4,6 +4,7 @@ def play():
 
     user = input(f"Select your choise:- \nFor Rock type(r),\nFor Paper type(p),\nFor scissior type(s)\n")
     computer = random.choice(['r','p','s'])
+    print(f"Computer Choice:-  {computer}")
 
     if user == computer:
         return "It\'s tie!!!"
