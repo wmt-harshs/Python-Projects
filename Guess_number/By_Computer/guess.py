@@ -2,7 +2,7 @@
 import random
 
 def guess(x):
-
+    
     randum_number = random.randint(0,x)
     guess = x + 1
     while guess != randum_number:
@@ -14,5 +14,5 @@ def guess(x):
 
     print("Good, you sucess to guess the number.")
 
-x = input("Enter the highest range number:- ")
+x = int(input("Enter highest number:- "))
 guess(x)
