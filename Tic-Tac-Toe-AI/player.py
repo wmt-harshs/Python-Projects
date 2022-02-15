@@ -97,8 +97,7 @@ class GeniusComputerPlayer(Player):
                 if sim_score['score'] > best['score']:
                     best = sim_score 
             else:
-                if player == max_player: #but to minimize the other_player
-                    if sim_score['score'] < best['score']:
-                        best = sim_score 
+                if sim_score['score'] < best['score']:
+                    best = sim_score 
         
         return best  
