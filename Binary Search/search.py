@@ -1,5 +1,3 @@
-import builtins
-
 
 def naive(l, target):
     
